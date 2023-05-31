@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <ProcessWebServiceRequestMultiWebResponse xmlns="http://edupoint.com/webservices/">
+      <ProcessWebServiceRequestMultiWebResult>&lt;AckStatment xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" PRIV_STMT="{{ PRIVACY_STATEMENT }}" ActivateStudent="{{ ACTIVATE_STUDENT }}" ActivateStep1Intro="{{ ACTIVATE_STEP_1_INTRO }}" ActivateStep1Summary="{{ ACTIVATE_STEP_1_SUMMARY }}" Activate="{{ ACTIVATE }}" Cancel="{{ CANCEL }}" ActivatePrivacy="{{ ACTIVATE_PRIVACY }}" /&gt;</ProcessWebServiceRequestMultiWebResult>
+    </ProcessWebServiceRequestMultiWebResponse>
+  </soap:Body>
+</soap:Envelope>
