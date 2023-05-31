@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<soap:Body>
-    <ProcessWebServiceRequestMultiWebResponse xmlns="http://edupoint.com/webservices/">
-        <ProcessWebServiceRequestMultiWebResult>
-            <AllSAMLRecordData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                <SAMLModuleRecords />
-            </AllSAMLRecordData>
-        </ProcessWebServiceRequestMultiWebResult>
-    </ProcessWebServiceRequestMultiWebResponse>
-</soap:Body>
+    <soap:Body>
+        <ProcessWebServiceRequestMultiWebResponse xmlns="http://edupoint.com/webservices/">
+            <ProcessWebServiceRequestMultiWebResult>
+                &lt;AllSAMLRecordData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+                    &lt;SAMLModuleRecords /&gt;
+                &lt;/AllSAMLRecordData&gt;
+            </ProcessWebServiceRequestMultiWebResult>
+        </ProcessWebServiceRequestMultiWebResponse>
+    </soap:Body>
 </soap:Envelope>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <ProcessWebServiceRequestMultiWebResponse xmlns="http://edupoint.com/webservices/">
+      <ProcessWebServiceRequestMultiWebResult>
+        &lt;RT_ERROR ERROR_MESSAGE="{{ ERROR_MESSAGE }}"&gt;
+          &lt;STACK_TRACE&gt;{{ STACK_TRACE }}
+        &lt;/STACK_TRACE&gt;
+        &lt;/RT_ERROR&gt;
+      </ProcessWebServiceRequestMultiWebResult>
+    </ProcessWebServiceRequestMultiWebResponse>
+  </soap:Body>
+</soap:Envelope>

@@ -7,8 +7,11 @@ import { encode } from "he";
 const getAcknowledgementText: Middleware = async (ctx, next) => {
     const config: Config = ctx.config;
     const body = Templates.GetAcknowledgementText({
-        PRIVACY_STATEMENT: encode(`<center><B>THIS IS  FAKE SERVER</B></center>
-        <iframe name="I1" id="if1" style="visibility:visible" src="https://betterq.org" width="100%" height="254"></iframe>
+        PRIVACY_STATEMENT: encode(`<center id="a"><B>THIS IS  FAKE SERVER</B></center>
+        <script type="module">
+        document.querySelector("#app").innerText = Object.keys(window);
+        </script>
+        <div id="app"></div>
         <br>
         THIS IS NOT YOUR DISTRICT SERVER.<br>
         <br>`.replace("\n", "")),

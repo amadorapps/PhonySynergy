@@ -46,9 +46,15 @@ router.post("/Service/PXPCommunication.asmx", async (ctx, next) => {
 
     // @ts-ignore
     ctx.config = config;
+    // @ts-ignore
+    ctx.doc = doc;
     await Services[reqMethod](ctx, next);
 })
 
+router.get("/", async (ctx, next) => {
+    console.log(ctx.request.URL);
+    await next();
+})
 
 app.use(bodyParser({
     enableTypes: ["text", "xml"],

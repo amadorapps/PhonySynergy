@@ -14,6 +14,10 @@ const Templates: { [key: string]: HandlebarsTemplateDelegate<any> } = {
     "GetActivationLinkStatus": regularTemplate("GetActivationLinkStatus"),
     "GetSAMLStatus": regularTemplate("GetSAMLStatus"),
     "GetAcknowledgementText": regularTemplate("GetAcknowledgementText"),
+    "ProcessActivationKey": regularTemplate("ProcessActivationKey"),
+    "GetSecurityStatus": regularTemplate("GetSecurityStatus"),
+    "ChildList": regularTemplate("ChildList"),
+    "ChildListSuccess": regularTemplate("ChildListSuccess"),
 };
 
 export default Templates;
