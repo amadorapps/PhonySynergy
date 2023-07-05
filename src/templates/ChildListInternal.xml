@@ -1,0 +1,13 @@
+<ChildList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DistrictName="{{ ORG_NAME }}" AppVersion="2020.0.0" MobileClientTimeout="" ShowGradeBookModule="true" ShowAttendanceModule="true" ShowCurrentScheduleModule="true" ShowDisciplineModule="true" ShowCalenderModule="true" ShowConferenceModule="true" ShowCourseHistoryModule="true" SupportingAndShowCourseHistoryModule="true" ShowCourseRequestModule="true" ShowFeeModule="true" ShowHealthVisitModule="true" ShowHealthConditionsModule="true" ShowHealthImmunizationModule="true" ShowReportCardModule="true" ShowSchoolInformationModule="true" ShowStreamsModule="false" ShowClassWebSiteModule="true" ShowNamePronunciationModule="true" ShowSynergyMailModule="true" ShowDocumentModule="true" ShowSpecialEdModule="true" ShowDigitalLockerModule="true" ShowAssessmentModule="true" ShowTestHistoryModule="true" AcknowledgementsPresent="true" AllowStudentInfoEdit="true" AllowStudentInfoEditDisabled="false" UserFormattedName="{{ CHILD_NAME }}" SupportingReportCardModule="true" Notification_serverCanSupport="true" Notification_Attendance="true" Notification_Grades="true" Notification_Assignment="true" Notification_Health="true" Notification_Discipline="true" Notification_Grades_CutOff="100" Notification_Assignment_CutOff="100" SupportingPushNotifications="true" SupportingLogout="true" SupportingLMSPages="true" SupportingMyAccountEdit="true" SupportingDocumentUploadForOLR="false">
+    <DistrictEventRecordList></DistrictEventRecordList>
+    <Child AccessGU="0" RotationCode="" StudentGU="" StudentSSY="2" ChildFirstName="{{ CHILD_FIRST_NAME }}" ChildPermID="{{ STUDENT_ID }}" OrgYearGU="" SupportingFutureAttendance="false" DaysInFutureToAcceptAttendance="30" EmerReportEvtStuInClsGU="" EmerReportEvtName="" EmerReportEvtStartDateTime="" EmerReportEvtEndDateTime="" AreYouAtSchoolToday="" AreYouSafe="" StudentComments="" DiscDetHoursServed="" DiscDetHoursTotal="" ShowClassWebSiteModuleForChild="true">
+        <ID>0</ID>
+        <ChildName>{{ CHILD_NAME }}</ChildName>
+        <OrganizationName>{{ ORG_NAME }}</OrganizationName>
+        <Grade>{{ CHILD_GRADE }}</Grade>
+        <Events></Events>
+        <photo>{{{ PHOTO }}}</photo>
+        <ConcurrentSchools/>
+        <AttendanceReasonForFutureAtt/>
+    </Child>
+</ChildList>

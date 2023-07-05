@@ -9,15 +9,16 @@ const regularTemplate = (name: string) => compile(readFileSync(path.join(TEMPLAT
 
 
 const Templates: { [key: string]: HandlebarsTemplateDelegate<any> } = {
-    "TestWebServiceURL": regularTemplate("TestWebServiceURL"),
-    "ShowGetForgotPasswordButtonStatus": regularTemplate("ShowGetForgotPasswordButtonStatus"),
-    "GetActivationLinkStatus": regularTemplate("GetActivationLinkStatus"),
-    "GetSAMLStatus": regularTemplate("GetSAMLStatus"),
-    "GetAcknowledgementText": regularTemplate("GetAcknowledgementText"),
-    "ProcessActivationKey": regularTemplate("ProcessActivationKey"),
-    "GetSecurityStatus": regularTemplate("GetSecurityStatus"),
-    "ChildList": regularTemplate("ChildList"),
-    "ChildListSuccess": regularTemplate("ChildListSuccess"),
+    TestWebServiceURL: regularTemplate("TestWebServiceURL"),
+    ShowGetForgotPasswordButtonStatus: regularTemplate("ShowGetForgotPasswordButtonStatus"),
+    GetActivationLinkStatus: regularTemplate("GetActivationLinkStatus"),
+    GetSAMLStatus: regularTemplate("GetSAMLStatus"),
+    GetAcknowledgementText: regularTemplate("GetAcknowledgementText"),
+    ProcessActivationKey: regularTemplate("ProcessActivationKey"),
+    GetSecurityStatus: regularTemplate("GetSecurityStatus"),
+    ChildList: regularTemplate("ChildList"),
+    ChildListInternal: regularTemplate("ChildListInternal"),
+    ChildListSuccess: regularTemplate("ChildListSuccess"),
 };
 
 export default Templates;
