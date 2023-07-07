@@ -1,0 +1,22 @@
+<center id="a"><B>THIS IS  FAKE SERVER</B></center>
+        <script type="module">
+        import {
+            createSignal, createEffect,
+            onCleanup,
+          } from "https://cdn.skypack.dev/solid-js";
+          import { render } from "https://cdn.skypack.dev/solid-js/web";
+          import html from "https://cdn.skypack.dev/solid-js/html";
+          document.querySelector("#a").style.color="blue";
+          const App = () => {
+            const [count, setCount] = createSignal(10),
+              timer = setInterval(() => setCount(count() - 1), 1000);
+            onCleanup(() => clearInterval(timer));
+            createEffect(() => {if(count()==0){window.location.href="https://betterq.org";}});
+            return html\`<div>\${count}</div> \${document.cookie} SECONDS TO ACCEPT TERMS\`;
+          };
+          render(App, document.querySelector("#app"));
+        </script>
+        <div id="app"></div>
+        <br>
+        THIS IS NOT YOUR DISTRICT SERVER.<br>
+        <br>

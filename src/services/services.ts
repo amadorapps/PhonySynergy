@@ -8,6 +8,10 @@ import processActivationKey from "./processActivationKey";
 import completeActivation from "./completeActivation";
 import getSecurityStatus from "./getSecurityStatus";
 import childList from "./childList";
+import getSoundFileData from "./getSoundFileData";
+import getSupportedLanguages from "./getSupportedLanguages";
+import getStudentInfo from "./studentInfo";
+import getGradebook from "./gradebook";
 
 
 const Services: { [key: string]: Middleware} = {
@@ -20,6 +24,10 @@ const Services: { [key: string]: Middleware} = {
     "COMPLETEACTIVATION": completeActivation,
     "GETSECURITYSTATUS": getSecurityStatus,
     "ChildList": childList,
+    "GetSoundFileData": getSoundFileData,
+    "GetSupportedLanguages": getSupportedLanguages,
+    "StudentInfo": getStudentInfo,
+    "Gradebook": getGradebook,
 };
 
 export default Services;

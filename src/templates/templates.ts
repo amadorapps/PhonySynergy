@@ -19,6 +19,10 @@ const Templates: { [key: string]: HandlebarsTemplateDelegate<any> } = {
     ChildList: regularTemplate("ChildList"),
     ChildListInternal: regularTemplate("ChildListInternal"),
     ChildListSuccess: regularTemplate("ChildListSuccess"),
+    GetSupportedLanguages: regularTemplate("GetSupportedLanguages"),
+    GetSoundFileData: regularTemplate("GetSoundFileData"),
+    StudentInfo: regularTemplate("StudentInfo"),
+    Gradebook: regularTemplate("Gradebook"),
 };
 
 export default Templates;

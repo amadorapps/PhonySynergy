@@ -6,17 +6,18 @@ import Router from "koa-router"
 import { JSDOM } from "jsdom";
 
 import Services from "./services/services";
+import { readFileSync } from "fs";
+import path from "path";
 
 
 
 dotenv.config();
-const config = {...DEFAULT_CONFIG, ...(process.env as unknown as Config)}
-
+const config = {...DEFAULT_CONFIG, ...(process.env as unknown as Config)};
 
 const app = new Koa();
 const router = new Router();
 
-
+const PXPCommunicationAsmx = readFileSync(path.join(__dirname, "templates", "PXPCommunication.asmx.xml"), "utf-8");
 
 
 router.post("/Service/PXPCommunication.asmx", async (ctx, next) => {
@@ -49,6 +50,13 @@ router.post("/Service/PXPCommunication.asmx", async (ctx, next) => {
     // @ts-ignore
     ctx.doc = doc;
     await Services[reqMethod](ctx, next);
+})
+
+router.get("/Service/PXPCommunication.asmx", async (ctx, next) => {
+    ctx.headers["content-type"] = "text/xml";
+    ctx.body = PXPCommunicationAsmx;
+
+    await next();
 })
 
 router.get("/", async (ctx, next) => {
